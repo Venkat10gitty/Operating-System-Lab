@@ -12,7 +12,7 @@ void* calls(void* ptr)
 
 int main()
 {
-	pthread_t thread; // declare thread
+	pthread_t thread; 
 	pthread_create(&thread, NULL, calls, NULL);
     printf("Process id: %ld%ld", (long)getpid(), (long)getppid());
 	printf("In main \nthread id = %d\n", thread);
